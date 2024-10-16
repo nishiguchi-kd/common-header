@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共通ヘッダーとフッター</title>
+</head>
+<body>
+    <common-header></common-header>
+
+    <main>
+        <h1>メインコンテンツ</h1>
+        <p>ここにページの主要なコンテンツが入ります。</p>
+    </main>
+
+    <common-footer></common-footer>
+
+    <script>
+        class CommonHeader extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = `
+                    <header>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">ホーム</a></li>
+                                <li><a href="about.html">会社概要</a></li>
+                                <li><a href="contact.html">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                `;
+            }
+        }
+
+        class CommonFooter extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = `
+                    <footer>
+                        <p>&copy; ${new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+                    </footer>
+                `;
+            }
+        }
+
+        customElements.define('common-header', CommonHeader);
+        customElements.define('common-footer', CommonFooter);
+    </script>
+</body>
+</html>
