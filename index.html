@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInnovate Solutions - ホーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+        }
+        .service {
+            flex-basis: 30%;
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>革新的なテクノロジーソリューション</h1>
+        <p>TechInnovate Solutionsへようこそ。私たちは最先端のテクノロジーを活用し、ビジネスの課題を解決します。</p>
+        <div class="services">
+            <div class="service">
+                <h2>AI ソリューション</h2>
+                <p>ビジネスプロセスを最適化し、意思決定を支援します。</p>
+            </div>
+            <div class="service">
+                <h2>クラウドサービス</h2>
+                <p>スケーラブルで安全なクラウドインフラストラクチャを提供します。</p>
+            </div>
+            <div class="service">
+                <h2>IoT プラットフォーム</h2>
+                <p>デバイスを接続し、リアルタイムデータ分析を実現します。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TechInnovate Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
